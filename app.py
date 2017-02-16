@@ -1,12 +1,12 @@
 # coding: utf-8
 
 from japronto import Application
-import Pronthost
+import Japronthost 
 
 app = Application();
 
 # Let Pronthost setup the routes !
-Pronthost.setup_routes(".",app.router);
+Japronthost.setup_routes(".",app.router);
 
 # Runs the application
 app.run(debug=True);

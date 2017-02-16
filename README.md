@@ -21,6 +21,11 @@ Before you run your application, let Japronthost setup its routes, like this :
 	import Pronthost
 	Pronthost.setup_routes('.',app.router)
 
-Then you just need to create .ignore files. A .ignore files contains all the files/directories you dont want anybody to access. Please make sure you only put one file per line.
+See more code in the app.py file.
+
+Then you just need to create .ignore files. 
+* A .ignore files contains all the files/directories you dont want anybody to access. 
+* Please make sure you only put one file per line. 
+* A .ignore file **CAN** be empty.
 
 That's all there is !
