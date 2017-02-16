@@ -27,5 +27,6 @@ Then you just need to create .ignore files.
 * A .ignore files contains all the files/directories you dont want anybody to access. 
 * Please make sure you only put one file per line. 
 * A .ignore file **CAN** be empty.
+* You can put as many .ignore files as you want, one per directory.
 
 That's all there is !
