@@ -9,6 +9,15 @@ def fileRequest(req):
 	fileMagic = magic.Magic(mime=True);
 	fileEncoding = encodeMagic.from_file("." + req.path);
 	mime = fileMagic.from_file("." + req.path);
+	
+	# Handle special cases: css,HTML,XML ...
+	if req.path.endswith(".css"):
+		mime = "text/css";
+	elif req.path.endswith(".html"):
+		mime = "text/html";
+	elif req.path.endswith(".xml"):
+		mime = "text/xml";
+
 	content = "";
 	if fileEncoding != 'binary':
 		with open('.' + req.path, 'r', encoding=fileEncoding) as fileToRead:
