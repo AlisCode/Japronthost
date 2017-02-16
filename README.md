@@ -1,6 +1,7 @@
 # Japronthost
 
 Japronthost is a tiny module for [Japronto](https://github.com/squeaky-pl/japronto), that makes it really simple to setup a tiny FTP-Like service on a server.
+Japronthost basically setup your Japronto Application's router to respond to HTTP GET requests, returning the file you want to access.
 
 ---------------
 
@@ -18,8 +19,8 @@ There's not much to do !
 
 Before you run your application, let Japronthost setup its routes, like this :
 
-	import Pronthost
-	Pronthost.setup_routes('.',app.router)
+	import Japronthost
+	Japronthost.setup_routes('.',app.router)
 
 See more code in the app.py file.
 
