@@ -17,6 +17,7 @@ Please make sure to install these dependencies before you start using Japronthos
 There's not much to do !
 
 Before you run your application, let Japronthost setup its routes, like this :
+
 	import Pronthost
 	Pronthost.setup_routes('.',app.router)
 
